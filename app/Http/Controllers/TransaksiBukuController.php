@@ -60,7 +60,7 @@ class TransaksiBukuController extends Controller
             'qty' => $datas['qty'],
             'tipe' => "IN",
             'created_by' => auth()->id(),
-            
+            'tgl_transaksi' =>$datas['tgl'],
         ]);
 
         if(!$create){
